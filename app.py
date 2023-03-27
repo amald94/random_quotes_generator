@@ -9,8 +9,6 @@ def generate_quotes():
 
 @app.route('/')
 def hello():
-    name = request.args.get("name", "World")
-    # return f'Hello, {name}!'
     return render_template('index.html')
 
 if __name__ == '__main__':
